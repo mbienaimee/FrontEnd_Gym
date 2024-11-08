@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+    background-color: white;
+    display: flex;
+    padding:15px ;
+    justify-content: space-between;
+}
+.nav-link ul{
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+}
+.nav-link ul li{
+    display: inline;
+}
