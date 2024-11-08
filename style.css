@@ -9,10 +9,10 @@
   padding: 15px;
   justify-content: space-between;
 }
-.download{
-    fill: blue;
-    height: 20px;
-    width: 20px;
+.download {
+  fill: blue;
+  height: 20px;
+  width: 20px;
 }
 .nav-link {
   padding-top: 10px;
@@ -37,11 +37,11 @@
   border: 1px solid black;
   padding: 10px;
   container: flex;
-  justify-content: center   ;
+  justify-content: center;
 }
-.button a{
-    display: flex;
-    justify-content: center;
+.button a {
+  display: flex;
+  justify-content: center;
 }
 .back-section {
   min-height: 100vh;
@@ -96,9 +96,56 @@
   font-weight: bold;
   text-decoration: none;
 }
-.div-div:last-child button{
-    background: none;
-    border: none;
-    color: white;
-    padding: 0px 10px;
+.div-div:last-child button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0px 10px;
+}
+.message {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #dfe0e4;
+  padding: 20px;
+}
+.messaging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191e3b;
+  width: 80%;
+  height: 40%;
+  margin: 5%;
+  align-content: center;
+  padding: 1.3%;
+  gap: 28rem;
+  /* justify-content: center;
+    align-items: center; */
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+.mess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.register {
+  font-size: 12px;
+}
+.photoes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  min-width: ;
+}
+.photoes div img {
+  width: 250px;
+  height: 250px;
+}
+.photo {
+  border-radius: 30px;
+  /* border: 1px solid black; */
 }
