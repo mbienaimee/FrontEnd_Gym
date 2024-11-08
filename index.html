@@ -93,30 +93,134 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="photoes">
-            <div class="photo">
-                <img src="/images/8ca9845e.jpeg" alt="">
-                <p>villa</p>
-            </div>
-            <div>
-                <img src="/images/8ca9845e.jpeg" alt="">
-            </div>
-            <div>
-                <img src="/images/8ca9845e.jpeg" alt="">
-            </div>
-            <div>
-                <img src="/images/8ca9845e.jpeg" alt="">
-            </div>
-            <div>
-                <img src="/images/8ca9845e.jpeg" alt="">
-            </div>
-            <div>
-                <img src="/images/8ca9845e.jpeg" alt="">
-            </div>
-           
+      <section class="popular-destinations">
+        <h3 class="title">Popular destinations</h3>
+    
+        <!-- Navigation Buttons -->
+        <button class="nav-button nav-left" onclick="scrollLeft()">&#8249;</button>
+        <button class="nav-button nav-right" onclick="scrollRight()">&#8250;</button>
+    
+        <!-- Scrollable Container -->
+        <div class="destinations-container" id="destinationsContainer">
+            <a href="#" class="destination-card">
+                <img class="destination-image" src="/images/1f24b64adeac200bc93ccb3c69d8b901.jpeg" alt="Kigali">
+                <div class="destination-name">holiday home</div>
+            </a>
+            <a href="#" class="destination-card">
+                <img class="destination-image" src="/images/6981bbd6_R3.jpeg" alt="Paris">
+                <div class="destination-name">Holiday apartment</div>
+            </a>
+            <a href="#" class="destination-card">
+                <img class="destination-image" src="/images/bfe337d03fdaa52393782f850bdfbc39.jpeg" alt="Nairobi">
+                <div class="destination-name">Holiday cartage</div>
+            </a>
+            <a href="#" class="destination-card">
+                <img class="destination-image" src="/images/fb4ad6b16d166bd54ed12dce6aa6203e.jpeg" alt="Dubai">
+                <div class="destination-name">country house</div>
+            </a>
+            <a href="#" class="destination-card">
+                <img class="destination-image" src="/images/bd2f6057.jpeg" alt="Gisenyi">
+                <div class="destination-name">Village house</div>
+            </a>
+            <a href="#" class="destination-card">
+                <img class="destination-image" src="/images/PARTNER_Letterbox_Cottage_Cotswolds_v2.jpeg" alt="Kampala">
+                <div class="destination-name">challet</div>
+            </a>
         </div>
-      </section>
+    </section>
+    <section class="trip-section">
+        <div class="trip-container">
+            <div class="trip-header">
+                <h3 class="trip-title">Browse the weekend trips</h3>
+                <p class="trip-offer-period">Offers for the period: 13. Dec.–15. Dec.</p>
+            </div>
+            <div class="trip-list">
+                <a href="#" class="trip-card">
+                    <img class="trip-image" src="https://images.trvl-media.com/lodging/34000000/33710000/33701700/33701673/bd2f6057.jpg" alt="">
+                    <div class="trip-info">
+                        <p class="trip-location">Dahlem, North Rhine-Westphalia</p>
+                        <div class="trip-description">
+                            Detached holiday home in the Eifel, allergy-friendly wooden construction.
+                        </div>
+                        <p class="trip-rating">
+                            <span class="rating-score">10,0</span>
+                            <span class="rating-label">Exceptional</span>
+                            (109 reviews)
+                        </p>
+                    </div>
+                    <div class="trip-price-info">
+                        <div class="trip-price">216 €</div>
+                        <p class="trip-price-details">
+                            for 2 nights<br>
+                            108 € per night<br>
+                            incl. Taxes & fees
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="trip-card">
+                    <img class="trip-image" src="https://images.trvl-media.com/lodging/34000000/33710000/33701700/33701673/bd2f6057.jpg" alt="">
+                    <div class="trip-info">
+                        <p class="trip-location">Dahlem, North Rhine-Westphalia</p>
+                        <div class="trip-description">
+                            Detached holiday home in the Eifel, allergy-friendly wooden construction.
+                        </div>
+                        <p class="trip-rating">
+                            <span class="rating-score">10,0</span>
+                            <span class="rating-label">Exceptional</span>
+                            (109 reviews)
+                        </p>
+                    </div>
+                    <div class="trip-price-info">
+                        <div class="trip-price">216 €</div>
+                        <p class="trip-price-details">
+                            for 2 nights<br>
+                            108 € per night<br>
+                            incl. Taxes & fees
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="trip-card">
+                    <img class="trip-image" src="/images/8ca9845e.jpeg" alt="">
+                    <div class="trip-info">
+                        <p class="trip-location">Dahlem, North Rhine-Westphalia</p>
+                        <div class="trip-description">
+                            Detached holiday home in the Eifel, allergy-friendly wooden construction.
+                        </div>
+                        <p class="trip-rating">
+                            <span class="rating-score">10,0</span>
+                            <span class="rating-label">Exceptional</span>
+                            (109 reviews)
+                        </p>
+                    </div>
+                    <div class="trip-price-info">
+                        <div class="trip-price">216 €</div>
+                        <p class="trip-price-details">
+                            for 2 nights<br>
+                            108 € per night<br>
+                            incl. Taxes & fees
+                        </p>
+                    </div>
+                </a>
+                <!-- Repeat similar <a> tags for the other cards... -->
+            </div>
+        </div>
+    </section>
+    
+    
+    <script>
+        const container = document.getElementById("destinationsContainer");
+        const scrollAmount = 260; // Adjust scroll amount based on card width and gap
+    
+        function scrollLeft() {
+            container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        }
+    
+        function scrollRight() {
+            container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        }
+    </script>
+    
+    
     </main>
   </body>
 </html>
