@@ -294,6 +294,7 @@
     
     .trip-rating {
         font-size: 0.875rem;
+        text-decoration: none;
     }
     
     .rating-score {
